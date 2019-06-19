@@ -1,20 +1,33 @@
-header {
-    background: #444343;
-    color: #ffffff;
-}
-h1 {
-    -webkit-animation-duration: 3s;
-    -webkit-animation-name: slidein;
-}
-@-webkit-keyframes slidein {
+@keyframes slidein {
     from { 
         margin-left: 100%;
         width: 300%;
         }
     to {
-        margin-left: 0%,
+        margin-left: 0%;
         width: 100%;
     }
+}
+header {
+    background: #444343;
+    color: #ffffff;
+}
+.about-btn .btn {
+    margin: 7px 40px;
+    background: rgb(18, 22, 236);
+    color: #fff;
+    width: 180px;
+    border-radius: 2px;
+}
+h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+.title {
+    display: block;
+    float: left;
+    color: rgb(9, 9, 248);
+    line-height: 26px;
 }
 .main {
     background: #f2f2f2;
@@ -51,4 +64,9 @@ footer {
 }
 .itemsMenu li a#actual {
     background: #AAE
+}
+.explab {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: bolder;
 }

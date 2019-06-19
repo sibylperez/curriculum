@@ -6,7 +6,6 @@
             <meta name= "description" content= "Curriculum Vitae web">
             <meta name= "keyboards" content= "Curriculum, Sibyl, información, trabajos">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-            
         <!-- Bootstrap CSS -->
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             <link rel="stylesheet" href="estilos.css">
@@ -20,72 +19,153 @@
 <div class="container">
     <section class="main row">
         <article class= "col-xs-12 col-md-9">
-            <h2> Presentación </h2>
-                <p> 
-                Soy profesional aduanero con experiencia en las áreas de Contabilidad, Administración y Desarrollo Web. 
-                Líder integral en actividades vinculadas con el cargo laboral; lo cual me ha permitido resguardar, con mucha sinergia 
-                y trabajo en equipo, los intereses de las organizaciones para las cuales he prestado servicios. Amplia capacidad de análisis 
-                y solución de problemas. En búsqueda de aportar mis conocimientos y aprender todo lo que pueda ofrecer la empresa a laborar.
-                 </p>
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Aptitudes</a>
+                </li>
+            </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <h2> Presentación </h2>
+                            <p> 
+                            Soy profesional aduanero con experiencia en las áreas de Contabilidad, Administración y Desarrollo Web. 
+                            Líder integral en actividades vinculadas con el cargo laboral; lo cual me ha permitido resguardar, con mucha sinergia 
+                            y trabajo en equipo, los intereses de las organizaciones para las cuales he prestado servicios. Amplia capacidad de análisis 
+                            y solución de problemas. En búsqueda de aportar mis conocimientos y aprender todo lo que pueda ofrecer la empresa a laborar.
+                             </p>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div class="infos">
+                                <ul class="profile-list">
+                                    <li class="clearfix">
+                                        <span class="title">Edad:</span>&nbsp;
+                                        <span class="content"><i>35</i></span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="title">DNI:</span>&nbsp;
+                                        <span class="content"><i>xx.xxx.xxx</i></span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="title">Correo:</span>&nbsp;
+                                        <span class="content"><i>sibylperezl@gmail.com</i></span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="title">Telefóno:</span>&nbsp;
+                                        <span class="content"><i>+54 9 11 xx xx xx</i></span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="title">Dirección:</span>&nbsp;
+                                        <span class="content"><i>Gregorio de Laferrere. CABA. Argentina</i></span>
+                                     </li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <button type="button" class="btn btn-outline-primary">Asistente Aduana</button>
+                        <button type="button" class="btn btn-outline-success">Sistema LANSYS</button>
+                        <button type="button" class="btn btn-outline-primary">Inglés</button>
+                        <button type="button" class="btn btn-outline-success">HTML/HTML5</button>
+                        <button type="button" class="btn btn-outline-primary">CSS/CSS3</button>
+                        <button type="button" class="btn btn-outline-success">Gestión de proyectos</button>
+                        <button type="button" class="btn btn-outline-primary">Microsoft Office</button>
+                        <button type="button" class="btn btn-outline-success">Comercio Exterior</button>
+                        <button type="button" class="btn btn-outline-primary">Estrategia empresarial</button>
+                    </div>
+                    <br />
+                </div>
             <div id= "menu">
                 <div class= "txtPresentaMenu"></div>
                     <ul class= "itemsMenu">
-                        <li><a href= "#">Estudios</a></li>
-                        <li><a href= "#">Cursos</a></li>
-                         <li><a href= "#">Experiencia Laboral</a></li>
-                        <li><a href= "#">Redes Sociales</a></li>			
+                        <li><a href="#estudios">Estudios</a></li>
+                        <li><a href= "#cursos">Cursos</a></li>
+                         <li><a href= "#experiencia">Experiencia Laboral</a></li>
+                        <li><a href= "#redes">Redes Sociales</a></li>			
                     </ul>	
             </div>
         </article>
         <aside class="col-xs-12  col-md-3">
             <img src="imagenes/fotosp.jpg" alt="Foto Carnet" class="rounded mx-auto d-block"> <br />
-            <p>
-                
-            </p>
+            <div id="about-btn" class="card-action">
+                <div class="about-btn"> 
+                    <a href="data/CV.pdf" class="btn waves-effect">Descargar CV</a>
+                </div>
+            </div>
         </aside>
     </section>
     <div class="row">
         <div class="color1 col-xs-12 col-sm-6">
-            <h3>ESTUDIOS</h3>
+            <h3 id="estudios">ESTUDIOS</h3>
                 <p class="lead"> ENAHP - Escuela Nacional de Administración y Hacienda Pública </p>
                 <p>Titulo: Licenciada Ciencias Fiscales Mención Aduanas y Comercio Exterior</p>
                 <p>Curso: Agosto 2000 – Diciembre 2005</p>
                 <p>Puntuación: 15,70</p>
+                <br />
+                <p class="lead"> Universidad Marítima del Caribe </p>
+                <p>Titulo: Especialización Negocio Marítimo Internacional</p>
+                <p>Curso: Agosto 2006 – Abril 2012</p>
+                <p>Puntuación: 17</p>
         </div>
         <div class="col-xs-12 col-sm-6">
-        <h3>Cursos</h3>
-            <p>
-                .....
-            </p>
+        <h3 id="cursos">Cursos</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Institución</th>
+                        <th scope="col">Título</th>
+                      </tr>
+                </thead>
+                 <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Oct-Nov 2018</td>
+                        <td>Instituto Superior de Enseñanza - Gualeguay</td>
+                        <td>Asistente en Despachante de Aduanas</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Enero-Dic 2013</td>
+                        <td>Universidad Central de Venezuela</td>
+                        <td>Inglés</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Agosto-Dic 2003</td>
+                        <td>Centro de Contadores Públicos</td>
+                        <td>Contabilidad Auxiliar</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Sep 2003</td>
+                        <td>Trade Training Adiestramiento</td>
+                        <td>Investigación de Mercados Internacionales</td>
+                      </tr>
+                </tbody>
+            </table>
         </div>
     </div>
     <section class="main row">
         <article class= "col-xs-12">
-            <h2> Experiencia Laboral </h2>
-                <p> 
-                        NISHACELL. Cajera Administradora Senior
-                        OCTUBRE 2017 - NOVNOVIEMRE 2018
-                        
-                        Manejo de sistema administrativo de ventas e inventario (Gdssistemas).
-                        
-                        ELECTRÓNICA QUANTUM, C.A. Administración Cuentas por Pagar Semi Senior
-                        
-                        MAYO 2015 - FEBRERO 2016
-                        
-                        Manejo del sistema administrativo LANSYS; Calculo de retenciones de IVA e ISLR.
-                        
-                        SERVICIOS Y TRAMITACIONES PAC Asistencia a la Gerencia General Semi Senior
-                        
-                        JULIO 2009 - ABRIL 2012
-                        
-                        Clasificación Arancelaria, permisología correspondiente a la importación de alimentos. Empresa de tramitación: Nestlé de Venezuela
-                        
-                        GENERAL DE ALIMENTOS NISA, C.A. (GENICA) Coordinadora de Importaciones Semi Senior
-                        
-                        DICIEMBRE 2008 – JULIO 2009
-                        
-                        Clasificación Arancelaria, permisología correspondiente a la importación de alimentos (lácteos y quesos)
-                        
+            <h2 id="experiencia"> Experiencia Laboral </h2> <br />
+                <p class="explab">NISHACELL. Cajera Administradora Senior </p>
+                <p>OCTUBRE 2017 - NOVIEMRE 2018 </p>
+                <p class="font-italic">Manejo de sistema administrativo de ventas e inventario (Gdssistemas). </p>
+                <p class="explab">ELECTRÓNICA QUANTUM, C.A. Administración Cuentas por Pagar Semi Senior </p>
+                <p>MAYO 2015 - FEBRERO 2016</p>
+                <p class="font-italic">Manejo del sistema administrativo LANSYS; Calculo de retenciones de IVA e ISLR.</p>
+                <p class="explab">SERVICIOS Y TRAMITACIONES PAC Asistencia a la Gerencia General Semi Senior </p>
+                <p>JULIO 2009 - ABRIL 2012</p>
+                <p class="font-italic">Clasificación Arancelaria, permisología correspondiente a la importación de alimentos. Empresa de tramitación: Nestlé de Venezuela </p>
+                <p class="explab">GENERAL DE ALIMENTOS NISA, C.A. (GENICA) Coordinadora de Importaciones Semi Senior </p>
+                <p>DICIEMBRE 2008 – JULIO 2009</p>
+                <p class="font-italic">Clasificación Arancelaria, permisología correspondiente a la importación de alimentos (lácteos y quesos)   
                 </p>
         </article>
     </section>
@@ -97,5 +177,9 @@
         <button type="button" class="btn btn-outline-primary btn-rounded waves-effect">Facebook</button>
     </div>
 </footer>
+ <!-- Bootstrap Javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
