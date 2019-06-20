@@ -70,3 +70,28 @@ footer {
     text-transform: uppercase;
     font-weight: bolder;
 }
+.social-bar {
+    margin: 0px 500px;
+    font-size: : 15px;
+    display: flex;
+}
+.icon {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px;
+}
+.icon-facebook2 {
+    background: #227;
+}
+.icon-twitter {
+    background: #339dc5;
+}
+.icon-linkedin {
+    background: #2e406e;
+}
+.icon-youtube {
+    background: #E83028;
+}
+.icon-github {
+    background: #000;
+}
